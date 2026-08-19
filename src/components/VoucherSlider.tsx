@@ -12,9 +12,9 @@ export default function VoucherSlider() {
   const momentumId = useRef<number>(0);
 
   const vouchers: Voucher[] = [
-    { id: 1, brand: "Nike", discount: "25% OFF", desc: "Buy at for min. 40 EUR and enjoy a 10% discount on everything, with an exclusive code.", expiry: "Valid until 03 March 2022", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
-    { id: 2, brand: "Nike", discount: "15% OFF", desc: "Get an extra 15% off outlet items. Excludes select limited items. Free shipping on orders.", expiry: "Valid until 15 June 2025", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
-    { id: 3, brand: "Nike", discount: "20% OFF", desc: "Enjoy 20% off on all sportswear items. Code valid online for a limited time.", expiry: "Valid until 08 Dec 2025", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
+    { id: 1, brand: "Nike", discount: "25% OFF", desc: "Buy at for min. 40 EUR and enjoy a 10% discount on everything, with an exclusive code.", expiry: "Valid until 31 Dec 2026", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
+    { id: 2, brand: "Nike", discount: "15% OFF", desc: "Get an extra 15% off outlet items. Excludes select limited items. Free shipping on orders.", expiry: "Valid until 15 June 2026", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
+    { id: 3, brand: "Nike", discount: "20% OFF", desc: "Enjoy 20% off on all sportswear items. Code valid online for a limited time.", expiry: "Valid until 08 Dec 2026", flags: ["🇩🇪", "+", "🇨🇭", "🇬🇧", "🇩🇪", "🇪🇺", "🇩🇪"] },
   ];
 
   const getFlagUrl = (flag: string) => {
@@ -128,16 +128,16 @@ export default function VoucherSlider() {
                   {/* Brand — mobile only */}
                   <p className="sm:hidden text-[15px] font-medium text-white leading-tight mb-3">{voucher.brand}</p>
                   {/* Description — hidden on mobile */}
-                  <p className="hidden sm:block text-[10px] sm:text-[12px] md:text-[14px] text-[#a8a8a8] leading-snug font-light max-w-[299px] line-clamp-2">
+                  <p className="hidden sm:block text-[10px] sm:text-[12px] md:text-[14px] text-[#98989d] leading-snug font-light max-w-[299px] line-clamp-2 mb-1.5 sm:mb-2.5">
                     {voucher.desc}
                   </p>
                   {/* Expiry */}
-                  <p className="text-[11px] sm:text-[12px] md:text-[13px] text-zinc-400 font-normal leading-none">
+                  <p className="text-[11px] sm:text-[12px] md:text-[13.5px] text-[#686870] font-normal leading-none">
                     {voucher.expiry}
                   </p>
                 </div>
                 {/* Flags — hidden on mobile */}
-                <div className="hidden sm:flex justify-start items-center border-t border-white/5 pt-2 md:pt-2.5 mt-2">
+                <div className="hidden sm:flex justify-start items-center border-t border-white/10 pt-2 md:pt-2.5 mt-2 sm:mt-2.5">
                   <div className="flex gap-1.5 sm:gap-2 text-sm items-center">
                     {voucher.flags.map((f, i) => {
                       if (f === "+") {

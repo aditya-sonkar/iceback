@@ -62,9 +62,9 @@ export default function FaqAccordion() {
                 </svg>
               </div>
               
-              <div className={`grid transition-all duration-300 ease-in-out ${activeIndex === i ? "grid-rows-[1fr] opacity-100 mt-4 md:mt-6" : "grid-rows-[0fr] opacity-0"}`}>
+              <div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${activeIndex === i ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
                 <div className="overflow-hidden">
-                  <p className="text-[#9f9fa3] text-[14px] md:text-[18px] leading-relaxed max-w-[1100px] pt-1 md:pt-0">
+                  <p className="text-[#9f9fa3] text-[14px] md:text-[18px] leading-relaxed max-w-[1100px] pt-3 md:pt-5">
                     {faq.answer}
                   </p>
                 </div>

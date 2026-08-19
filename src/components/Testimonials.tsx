@@ -19,28 +19,28 @@ export default function Testimonials() {
       name: "Sarah M.", 
       location: "Zürich, Switzerland", 
       rating: 5, 
-      text: '"A wonderful concept. It feels good knowing my shopping supports forest protection without costing me an extra cent."',
+      text: '"Wasn\'t expecting much, but I\'ve already earned over CHF 50 back this month. The Mastercard makes it even better with double cashback!"',
+      avatar: "/sarah_image.jpg" 
+    },
+    { 
+      name: "Sarah M.", 
+      location: "Zürich, Switzerland", 
+      rating: 5, 
+      text: '"A wonderful concept. It feels good knowing my everyday shopping supports forest protection without costing me an extra cent."',
       avatar: "/sarah_m.jpg" 
     },
     { 
       name: "Sarah M.", 
       location: "Zürich, Switzerland", 
       rating: 5, 
-      text: '"I love how easy it is to earn cashback while shopping at my favorite stores. Even better, I get to donate some of it to causes I care about!"',
+      text: '"Smooth experience and instant payouts. Turning my routine online orders into climate impact is just brilliant."',
       avatar: "/sarah_m.jpg" 
     },
     { 
       name: "Sarah M.", 
       location: "Zürich, Switzerland", 
       rating: 5, 
-      text: '"Wasn\'t expecting much, but I\'ve already earned over CHF 40 back this month. The Mastercard makes it even better with double cashback!"',
-      avatar: "/sarah_m.jpg" 
-    },
-    { 
-      name: "Sarah M.", 
-      location: "Zürich, Switzerland", 
-      rating: 5, 
-      text: '"I love how easy it is to earn cashback while shopping at my favorite stores. Even better, I get to donate some of it to causes I care about!"',
+      text: '"The cashback rates are great and the app is super slick. Highly recommend to anyone who wants to shop smarter!"',
       avatar: "/sarah_m.jpg" 
     }
   ];
@@ -86,7 +86,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-[30px] md:py-20 w-full bg-black lg:bg-[#151515] overflow-hidden">
+    <section id="testimonials" className="py-[30px] md:py-20 w-full bg-black md:bg-[#151515] overflow-hidden">
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px]">
         
         {/* Mobile: Title */}

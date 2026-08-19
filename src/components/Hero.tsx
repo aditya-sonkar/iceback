@@ -3,14 +3,14 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative z-10 w-full bg-black lg:bg-[#151515] overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-[120px] pt-[120px] sm:pt-[130px] md:pt-[140px] xl:pt-[160px] pb-0 min-h-0 flex items-center md:items-start max-w-[1440px]">
+    <section id="hero" className="relative z-10 w-full bg-black md:bg-[#151515] overflow-hidden">
+      <div className="container mx-auto px-5 sm:px-6 md:px-12 lg:px-16 xl:px-[120px] pt-[115px] sm:pt-[130px] md:pt-[140px] xl:pt-[160px] pb-0 min-h-0 flex items-center md:items-start max-w-[1440px]">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1.1fr_0.9fr] gap-6 md:gap-4 xl:gap-16 items-center md:items-start w-full">
         {/* Left Column: Brand Pitch */}
         <div className="text-left flex flex-col gap-5 lg:gap-7 items-start max-w-full md:max-w-[480px] lg:max-w-[540px] xl:max-w-[950px] translate-y-0 md:translate-y-8 xl:translate-y-16">
-          <h1 className="text-[54px] sm:text-[66px] md:text-[42px] lg:text-[54px] xl:text-[88px] font-bold tracking-tight leading-[1.05] text-white xl:max-w-[950px]">
+          <h1 className="text-[62px] sm:text-[72px] md:text-[44px] lg:text-[58px] xl:text-[88px] font-bold tracking-tight leading-[0.98] text-white xl:max-w-[950px]">
             Shop. Save.<br />
-            <span className="md:whitespace-nowrap">Support the<br className="md:hidden" /> Planet</span>
+            <span className="sm:whitespace-nowrap">Support the<br className="sm:hidden" /> Planet</span>
           </h1>
           <p className="w-full text-left text-[15px] sm:text-[18px] md:text-[17px] lg:text-[19px] xl:text-[24px] text-white font-normal leading-relaxed md:whitespace-normal xl:whitespace-nowrap">
             Get cashback on your purchases &amp; turn it into climate impact.
@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         <div
-          className="relative h-[380px] sm:h-[440px] md:h-[460px] lg:h-[500px] xl:h-[640px] flex items-center justify-center cursor-pointer select-none md:scale-[0.80] lg:scale-[0.85] xl:scale-100 origin-top-right xl:translate-x-8 xl:translate-x-12 translate-y-0 md:translate-y-16 lg:translate-y-20 xl:translate-y-24"
+          className="relative h-[380px] sm:h-[440px] md:h-[460px] lg:h-[500px] xl:h-[640px] flex items-center justify-center cursor-pointer select-none md:scale-[0.80] lg:scale-[0.85] xl:scale-100 origin-top-right translate-x-0 md:translate-x-4 lg:translate-x-8 xl:translate-x-12 translate-y-0 md:translate-y-6 lg:translate-y-10 xl:translate-y-14"
         >
           {/* Ambient glow backdrop behind the credit card stack (Figma Specs: Cyan-to-Blue, 702px x 428px, 220px Blur) */}
           <div className="absolute w-[280px] h-[180px] sm:w-[500px] sm:h-[300px] lg:w-[702px] lg:h-[428px] rounded-full bg-gradient-to-r from-[#1fedf8] to-[#1f8eff] opacity-20 blur-[80px] sm:blur-[160px] lg:blur-[220px] lg:rotate-[90.25deg] z-0 pointer-events-none" />

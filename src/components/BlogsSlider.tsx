@@ -87,7 +87,7 @@ export default function BlogsSlider() {
   };
 
   return (
-    <section id="blogs" className="py-[30px] md:pt-28 md:pb-20 w-full bg-black overflow-hidden">
+    <section id="blogs" className="py-[30px] md:py-12 lg:py-18 w-full bg-black overflow-hidden">
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px] text-left mb-12">
         <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-6 md:mb-8 leading-[1.05] text-white">Latest Blogs</h2>
         <p className="text-[#9f9fa3] text-[16px] sm:text-[20px] md:text-[24px] font-normal leading-normal">Discover smarter ways to save and give back.</p>
@@ -132,23 +132,29 @@ export default function BlogsSlider() {
             <div className="border-t border-[#2d2e38] w-full" />
 
             {/* Bottom Row: Metadata & Tag Pill */}
-            <div className="flex items-center justify-between text-[11px] sm:text-[13.5px] md:text-[16px] text-slate-400 w-full pt-2 sm:pt-3">
-              <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3">
-                {/* Clock SVG Icon */}
-                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] text-[#9f9fa3]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                <span className="font-bold text-white leading-none md:leading-[20px]">{blog.readTime}</span>
-                <span className="text-[#9f9fa3]">•</span>
-                {/* Calendar SVG Icon */}
-                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] text-[#9f9fa3]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                <span className="font-bold text-white leading-none md:leading-[20px]">{blog.date}</span>
+            <div className="flex items-center justify-between text-[11px] sm:text-[13px] md:text-[16px] text-slate-400 w-full pt-2 sm:pt-3">
+              <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
+                {/* Read Time Group */}
+                <div className="flex items-center gap-1 sm:gap-1.5">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] text-[#9f9fa3] shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span className="font-bold text-white leading-normal">{blog.readTime}</span>
+                </div>
+
+                <span className="text-[#9f9fa3] text-[10px] sm:text-[12px] select-none">•</span>
+
+                {/* Date Group */}
+                <div className="flex items-center gap-1 sm:gap-1.5">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] text-[#9f9fa3] shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span className="font-bold text-white leading-normal">{blog.date}</span>
+                </div>
               </div>
               <span className="w-[110px] h-[34px] sm:w-[130px] sm:h-[40px] md:w-[155px] md:h-[48px] inline-flex items-center justify-center rounded-full bg-[rgba(82,82,82,0.5)] border border-[rgba(40,31,31,0.21)] text-white font-medium text-[11px] sm:text-[12px] md:text-[14px] whitespace-nowrap">
                 {blog.tag}

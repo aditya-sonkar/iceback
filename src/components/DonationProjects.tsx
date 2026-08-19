@@ -95,7 +95,7 @@ export default function DonationProjects() {
   };
 
   return (
-    <section id="climate-projects" className="py-[30px] md:py-20 w-full bg-black overflow-hidden">
+    <section id="climate-projects" className="py-[30px] md:py-12 lg:py-18 w-full bg-black overflow-hidden">
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px] text-left mb-12">
         <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-6 md:mb-8 leading-[1.05] text-white">Support Climate Projects</h2>
         <p className="text-[#9f9fa3] text-[16px] sm:text-[20px] md:text-[24px] font-normal leading-normal">Turn your cashback into real-world impact by donating to initiatives that protect the planet.</p>

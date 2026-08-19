@@ -115,7 +115,7 @@ export default function BrandSlider() {
   };
 
   return (
-    <section id="stores" className="py-[30px] md:py-24 w-full bg-black overflow-hidden">
+    <section id="stores" className="py-[30px] md:py-12 lg:py-18 w-full bg-black overflow-hidden">
       {/* Left Aligned Heading Wrapper */}
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px] text-left mb-8 md:mb-12">
         <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-4 md:mb-8 leading-[1.05] text-white">

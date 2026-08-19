@@ -12,22 +12,22 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 lg:top-8 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 lg:px-4">
+    <header className="fixed top-0 md:top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-4">
       <div className="flex flex-col w-full max-w-[984px]">
-        {/* Nav bar: Transparent on mobile (< lg), floating pill on desktop (lg+) */}
-        <div className="flex items-center justify-between h-[64px] lg:h-[88px] px-2 sm:px-4 lg:px-8 bg-transparent lg:bg-[#1E1E1E]/45 border-none lg:border lg:border-white/10 backdrop-blur-none lg:backdrop-blur-2xl shadow-none lg:shadow-lg rounded-none lg:rounded-full">
-          {/* Logo */}
-          <a href="#" className="text-[20px] sm:text-[24px] font-bold tracking-tight text-white hover:opacity-90 transition-opacity shrink-0">
+        {/* Nav bar: Transparent on mobile (< md), floating pill on desktop (md+) */}
+        <div className="flex items-center justify-between h-[64px] md:h-[76px] lg:h-[88px] px-3 sm:px-4 md:px-5 lg:px-8 bg-transparent md:bg-[#1E1E1E]/45 border-none md:border md:border-white/10 backdrop-blur-none md:backdrop-blur-2xl shadow-none md:shadow-lg rounded-none md:rounded-full">
+          {/* Logo — exact Figma Specs (Width: 130px, Height: 22px) */}
+          <a href="#" className="text-[22px] font-bold tracking-tight text-white hover:opacity-90 transition-opacity shrink-0 leading-[22px]">
             Money<span className="font-normal text-white">Back</span>
           </a>
 
-          {/* Desktop Nav (Visible on lg 1024px+) */}
-          <nav className="hidden lg:flex items-center gap-6 lg:gap-8">
+          {/* Desktop Nav (Visible on md 768px+) */}
+          <nav className="hidden md:flex items-center gap-2.5 md:gap-3 lg:gap-8">
             {navLinks.map((link) => (
               <a 
                 key={link.href} 
                 href={link.href} 
-                className="text-[16px] font-light text-white/70 leading-none tracking-normal hover:text-white transition-colors whitespace-nowrap"
+                className="text-[12px] md:text-[13px] lg:text-[16px] font-light text-white/70 leading-none tracking-normal hover:text-white transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -35,18 +35,18 @@ export default function Header() {
           </nav>
 
           {/* Right side: CTA + Hamburger */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <a 
               href="#connect" 
-              className="hidden lg:flex px-[24px] xl:px-[27px] py-[10px] xl:py-[12px] rounded-full bg-[#262626] border border-[#1fcbfa] text-[#1fcbfa] font-bold text-[14px] hover:bg-[#1fcbfa]/10 transition-all items-center justify-center leading-none shrink-0"
+              className="hidden md:flex px-[14px] md:px-[16px] lg:px-[27px] py-[8px] md:py-[9px] lg:py-[12px] rounded-full bg-[#262626] border border-[#1fcbfa] text-[#1fcbfa] font-bold text-[12px] md:text-[13px] lg:text-[14px] hover:bg-[#1fcbfa]/10 transition-all items-center justify-center leading-none shrink-0"
             >
               Start free
             </a>
 
-            {/* Hamburger — visible on mobile & tablet (< lg) */}
+            {/* Hamburger — visible on mobile (< md) */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden flex flex-col justify-center items-center gap-[5px] w-9 h-9 rounded-full border border-white/15 bg-black/40 backdrop-blur-md hover:border-white/40 transition-all"
+              className="md:hidden flex flex-col justify-center items-center gap-[5px] w-9 h-9 rounded-full border border-white/15 bg-black/40 backdrop-blur-md hover:border-white/40 transition-all"
               aria-label="Toggle menu"
             >
               <span className={`block w-4.5 h-[1.5px] bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
@@ -56,8 +56,8 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile & Tablet Dropdown Menu */}
-        <div className={`lg:hidden mt-2 overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-[360px] opacity-100" : "max-h-0 opacity-0"}`}>
+        {/* Mobile Dropdown Menu (< md) */}
+        <div className={`md:hidden mt-2 overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-[360px] opacity-100" : "max-h-0 opacity-0"}`}>
           <nav className="flex flex-col gap-1 px-4 py-4 rounded-2xl bg-[#191919]/95 border border-white/10 backdrop-blur-2xl shadow-xl">
             {navLinks.map((link) => (
               <a

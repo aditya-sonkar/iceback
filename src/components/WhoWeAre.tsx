@@ -22,7 +22,7 @@ export default function WhoWeAre() {
   };
 
   return (
-    <section id="who-we-are" className="w-full bg-black lg:bg-[#151515] py-[30px] lg:py-24 overflow-hidden">
+    <section id="who-we-are" className="w-full bg-black md:bg-[#151515] py-[30px] lg:py-24 overflow-hidden">
       <div className="mx-auto max-w-[1440px] px-6 md:px-16 lg:px-[120px]">
         {/* Left Aligned Heading & Sub-heading */}
         <div className="text-left mb-8 lg:mb-12">
