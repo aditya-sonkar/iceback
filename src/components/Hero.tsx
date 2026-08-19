@@ -164,7 +164,7 @@ export default function Hero() {
 
             {/* Pill 2 (Middle-Right): Spending helps plant trees */}
             <div
-              className="absolute top-[35%] left-[20px] sm:left-[50px] lg:left-[20px] xl:left-[70px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute top-[35%] left-[-20px] sm:left-[50px] lg:left-[20px] xl:left-[70px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "6s", animationDelay: "1.5s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shrink-0">

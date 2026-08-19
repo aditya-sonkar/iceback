@@ -138,27 +138,27 @@ export default function BrandSlider() {
         >
           {brands.map((brand, i) => (
             <React.Fragment key={i}>
-              {/* Mobile card — exact Figma specs (224px x 168px, radius 12px, padding 14px) */}
-              <div className="lg:hidden w-[224px] h-[168px] shrink-0 p-[14px] rounded-[12px] overflow-hidden bg-white flex flex-col justify-between shadow-lg scroll-item">
+              {/* Mobile card — exact Figma specs matching screenshot */}
+              <div className="lg:hidden w-[224px] h-[168px] shrink-0 p-4 rounded-[20px] overflow-hidden bg-white flex flex-col justify-between shadow-md scroll-item">
                 {/* Top: Brand name + OFF + Logo */}
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <p className="text-[12px] font-semibold text-slate-500">{brand.name}</p>
-                    <p className="text-[20px] font-black text-slate-900 leading-tight">{brand.cashback} OFF</p>
+                    <p className="text-[15px] font-medium text-slate-900 leading-tight">{brand.name}</p>
+                    <p className="text-[22px] font-bold text-black leading-tight mt-0.5">{brand.cashback} OFF</p>
                   </div>
-                  <div className="w-[56px] h-[40px] flex items-center justify-center shrink-0">
+                  <div className="w-[65px] h-[45px] flex items-center justify-center shrink-0">
                     {brand.logo}
                   </div>
                 </div>
-                {/* Middle: Available in */}
+                {/* Middle: Available in with border */}
                 <div>
-                  <span className="inline-block bg-slate-100 text-slate-500 text-[10px] font-medium px-2.5 py-1 rounded-full">
+                  <span className="inline-block w-full bg-[#F2F2F2] text-[#0F0F0F] text-[12px] font-normal px-3.5 py-1.5 rounded-[10px] text-left">
                     Available in
                   </span>
                 </div>
                 {/* Bottom: Mastercard cashback */}
-                <div className="border-t border-slate-100 pt-2">
-                  <p className="text-[10px] text-slate-500 leading-snug">
+                <div className="pt-0.5">
+                  <p className="text-[11px] text-slate-700 leading-snug">
                     Get <span className="text-[#00b3ff] font-bold">{brand.cardCashback}</span> Cashback with the Mastercard
                   </p>
                 </div>

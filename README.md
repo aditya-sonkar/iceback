@@ -24,10 +24,10 @@ Iceback is a modern FinTech & Climate Action platform turning everyday online sh
 
 ## Screenshots
 
-| Landing Page & Header | Hero Section & Mastercard |
+| Public Landing Page | How It Works |
 | :---: | :---: |
-| ![Landing Page](./public/screenshots/landing.png) | ![Hero Section](./public/screenshots/hero.png) |
-| *Modern responsive landing page & floating header* | *Hero cashback card showcase & Iceback Mastercard* |
+| ![Landing Page](./public/screenshots/landing.png) | ![How It Works](./public/screenshots/how-it-works.png) |
+| *Modern responsive landing page & floating header* | *3-step platform guide & cashback process* |
 
 | Partner Brands & Vouchers | Climate Impact & Projects |
 | :---: | :---: |
