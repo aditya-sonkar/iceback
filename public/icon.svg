@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Ultra-Clean Dark Metallic Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181B"/>
+      <stop offset="100%" stop-color="#09090B"/>
+    </linearGradient>
+
+    <!-- Electric Cyan Gradient -->
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#1FCBFA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Obsidian Rounded Badge -->
+  <rect x="32" y="32" width="448" height="448" rx="108" fill="url(#bg)" stroke="#27272A" stroke-width="8"/>
+
+  <!-- Minimalist Corporate "I" Emblem with Glowing Dot -->
+  <g transform="translate(0, 0)">
+    <!-- Stem of 'i' -->
+    <rect x="216" y="210" width="80" height="190" rx="20" fill="#FFFFFF"/>
+    
+    <!-- Glowing Cyan Dot of 'i' -->
+    <rect x="216" y="112" width="80" height="80" rx="24" fill="url(#cyan-grad)"/>
+  </g>
+</svg>

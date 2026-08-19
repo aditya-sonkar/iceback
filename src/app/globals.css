@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #151515;
+  --foreground: #ffffff;
+}
+
+@theme {
+  --color-bgDark: #151515;
+  --color-bgSecondary: #0f131a;
+  --color-accentCyan: #00f2fe;
+  --color-accentBlue: #4facfe;
+  --color-accentGreen: #00e676;
+  --color-accentOrange: #ff9f43;
+  --color-accentRed: #e63946;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+body, button, input, select, textarea {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  background: #000000;
+  color-scheme: dark;
+}
+
+body {
+  background: #000000;
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Custom glow circles */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: -10;
+  opacity: 0.8;
+}
+
+/* Glassmorphism custom panel utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Hide scrollbars utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Infinite Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom class for nav links matching user specifications exactly */
+.nav-link {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #9f9fa3;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover {
+  color: #ffffff;
+}
