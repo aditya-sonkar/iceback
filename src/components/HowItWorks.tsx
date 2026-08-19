@@ -2,16 +2,16 @@ import React from "react";
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative z-20 w-full bg-black py-[30px] lg:py-24">
+    <section id="how-it-works" className="relative z-20 w-full bg-black pt-6 md:pt-10 lg:pt-16 pb-[30px] lg:pb-24">
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px]">
-        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] lg:grid-cols-[0.9fr_1.1fr] gap-6 md:gap-8 lg:gap-24 items-center">
           
           {/* Left Column: Headline & Sub-headline */}
-          <div className="max-w-[420px] lg:max-w-[513px] text-left">
-            <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-4 lg:mb-8 leading-tight lg:leading-[80px] text-white">
-              How ICEBack <br className="hidden lg:block" /> Works
+          <div className="max-w-[420px] md:max-w-[340px] lg:max-w-[513px] text-left">
+            <h2 className="text-[32px] sm:text-[44px] md:text-[42px] lg:text-[70px] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.05] text-white">
+              How ICEBack <br className="hidden md:block" /> Works
             </h2>
-            <p className="text-[#9f9fa3] text-[16px] sm:text-[20px] md:text-[24px] leading-normal font-normal">
+            <p className="text-[#9f9fa3] text-[16px] sm:text-[18px] md:text-[16px] lg:text-[24px] leading-normal font-normal">
               Learn how ICEBack turns your spending into sustainable impact.
             </p>
           </div>

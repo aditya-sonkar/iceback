@@ -4,19 +4,20 @@ import React from "react";
 export default function Hero() {
   return (
     <section id="hero" className="relative z-10 w-full bg-black lg:bg-[#151515] overflow-hidden">
-      <div className="container mx-auto px-6 md:px-16 lg:px-[120px] pt-[150px] sm:pt-[150px] lg:pt-[180px] pb-4 sm:pb-6 lg:pb-8 min-h-[90vh] flex items-center max-w-[1440px]">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center w-full">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-[120px] pt-[120px] sm:pt-[130px] md:pt-[140px] xl:pt-[160px] pb-0 min-h-0 flex items-center md:items-start max-w-[1440px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1.1fr_0.9fr] gap-6 md:gap-4 xl:gap-16 items-center md:items-start w-full">
         {/* Left Column: Brand Pitch */}
-        <div className="text-left flex flex-col gap-6 lg:gap-[45px] items-start max-w-[867px] lg:-translate-y-16">
-          <h1 className="text-[52px] sm:text-[64px] lg:text-[72px] xl:text-[85px] font-bold tracking-tight leading-[1.1] text-white lg:max-w-[772px]">
-            Shop. Save. Support the Planet
+        <div className="text-left flex flex-col gap-5 lg:gap-7 items-start max-w-full md:max-w-[480px] lg:max-w-[540px] xl:max-w-[950px] translate-y-0 md:translate-y-8 xl:translate-y-16">
+          <h1 className="text-[54px] sm:text-[66px] md:text-[42px] lg:text-[54px] xl:text-[88px] font-bold tracking-tight leading-[1.05] text-white xl:max-w-[950px]">
+            Shop. Save.<br />
+            <span className="md:whitespace-nowrap">Support the<br className="md:hidden" /> Planet</span>
           </h1>
-          <p className="w-full text-left text-[16px] sm:text-[20px] md:text-[24px] text-[#AEA4A4] font-normal leading-relaxed">
+          <p className="w-full text-left text-[15px] sm:text-[18px] md:text-[17px] lg:text-[19px] xl:text-[24px] text-white font-normal leading-relaxed md:whitespace-normal xl:whitespace-nowrap">
             Get cashback on your purchases &amp; turn it into climate impact.
           </p>
           <a
             href="#connect"
-            className="flex w-full sm:w-auto justify-center text-center px-8 sm:px-10 py-3.5 sm:py-4 font-bold text-[#07090e] rounded-full bg-gradient-to-r from-[#00f2fe] to-[#4facfe] hover:shadow-[0_10px_30px_rgba(0,242,254,0.3)] transition-all hover:scale-105 active:scale-95 duration-200"
+            className="mt-1.5 sm:mt-2 xl:mt-3 flex items-center justify-center w-full sm:w-[320px] xl:w-[380px] h-[50px] xl:h-[60px] px-[28px] py-[12px] font-bold text-[16px] xl:text-[19px] text-[#07090e] rounded-full bg-gradient-to-r from-[#1FEDF8] to-[#1F8EFF] border border-[#1FCBFA]/50 hover:shadow-[0_10px_30px_rgba(31,237,248,0.35)] transition-all hover:scale-[1.02] active:scale-[0.98] duration-200"
           >
             Start Free
           </a>
@@ -25,7 +26,7 @@ export default function Hero() {
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         <div
-          className="relative h-[420px] sm:h-[480px] lg:h-[640px] flex items-center justify-center cursor-pointer select-none lg:pr-16"
+          className="relative h-[380px] sm:h-[440px] md:h-[460px] lg:h-[500px] xl:h-[640px] flex items-center justify-center cursor-pointer select-none md:scale-[0.80] lg:scale-[0.85] xl:scale-100 origin-top-right xl:translate-x-8 xl:translate-x-12 translate-y-0 md:translate-y-16 lg:translate-y-20 xl:translate-y-24"
         >
           {/* Ambient glow backdrop behind the credit card stack (Figma Specs: Cyan-to-Blue, 702px x 428px, 220px Blur) */}
           <div className="absolute w-[280px] h-[180px] sm:w-[500px] sm:h-[300px] lg:w-[702px] lg:h-[428px] rounded-full bg-gradient-to-r from-[#1fedf8] to-[#1f8eff] opacity-20 blur-[80px] sm:blur-[160px] lg:blur-[220px] lg:rotate-[90.25deg] z-0 pointer-events-none" />
@@ -147,7 +148,7 @@ export default function Hero() {
 
             {/* Pill 1 (Top-Left): Ryan Earned */}
             <div
-              className="absolute top-[-10px] left-[-25px] sm:left-[-70px] lg:left-[-90px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute top-[-15px] sm:top-[-20px] left-[-35px] sm:left-[-80px] lg:left-[-110px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "5s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full overflow-hidden border border-white/20 shrink-0">
@@ -164,7 +165,7 @@ export default function Hero() {
 
             {/* Pill 2 (Middle-Right): Spending helps plant trees */}
             <div
-              className="absolute top-[35%] left-[-20px] sm:left-[50px] lg:left-[20px] xl:left-[70px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute top-[28%] sm:top-[30%] left-[-10px] sm:left-[5px] md:left-[15px] lg:left-[35px] xl:left-[60px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "6s", animationDelay: "1.5s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shrink-0">
@@ -181,7 +182,7 @@ export default function Hero() {
 
             {/* Pill 3 (Bottom-Left): Join 500,000+ members */}
             <div
-              className="absolute bottom-[68px] sm:bottom-[95px] lg:bottom-[95px] left-[-25px] sm:left-[-70px] lg:left-[-110px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute bottom-[80px] sm:bottom-[110px] lg:bottom-[130px] left-[-55px] sm:left-[-110px] lg:left-[-150px] xl:left-[-170px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "7s", animationDelay: "3s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shrink-0">

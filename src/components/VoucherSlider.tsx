@@ -77,7 +77,7 @@ export default function VoucherSlider() {
   return (
     <section id="vouchers" className="py-[30px] md:py-20 w-full bg-black overflow-hidden">
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px] text-left mb-8 md:mb-12">
-        <h2 className="text-[32px] sm:text-[48px] md:text-[70px] font-bold tracking-tight mb-4 md:mb-8 leading-tight md:leading-[48px] text-white">Save More with Vouchers</h2>
+        <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-4 md:mb-8 leading-[1.05] text-white">Save More with Vouchers</h2>
         <p className="text-[#9f9fa3] text-[16px] sm:text-[20px] md:text-[24px] font-normal leading-normal">Enjoy handpicked offers designed to help you shop smarter.</p>
       </div>
       <div className="relative">

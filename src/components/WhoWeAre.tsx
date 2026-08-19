@@ -26,7 +26,7 @@ export default function WhoWeAre() {
       <div className="mx-auto max-w-[1440px] px-6 md:px-16 lg:px-[120px]">
         {/* Left Aligned Heading & Sub-heading */}
         <div className="text-left mb-8 lg:mb-12">
-          <h2 className="text-[32px] sm:text-[48px] md:text-[70px] font-bold tracking-tight mb-4 lg:mb-8 leading-tight md:leading-[48px] text-white">
+          <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-4 lg:mb-8 leading-[1.05] text-white">
             Who We Are
           </h2>
           <p className="text-white text-[16px] sm:text-[20px] md:text-[24px] font-normal leading-normal lg:leading-[55px] max-w-[1198px]">

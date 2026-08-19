@@ -42,7 +42,7 @@ export default function ContactForm() {
       <div className="container mx-auto px-6 lg:px-[120px] max-w-[1440px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-24 items-center justify-between">
           <div className="text-left mx-auto lg:mx-0 w-full">
-            <h2 className="text-[32px] sm:text-[48px] md:text-[70px] font-bold tracking-tight mb-3 md:mb-8 leading-tight md:leading-[48px] text-white text-left">
+            <h2 className="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold tracking-tight mb-3 md:mb-8 leading-[1.05] text-white text-left">
               Let's Connect
             </h2>
             <p className="text-[#9f9fa3] text-[16px] sm:text-[20px] md:text-[24px] font-normal leading-relaxed lg:leading-[55px] text-left">
