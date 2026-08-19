@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         {/* Right Column: Cascading Vertical Cards Stack & Floating Glassmorphic Pills */}
         <div
-          className="relative h-[380px] sm:h-[440px] md:h-[460px] lg:h-[500px] xl:h-[640px] flex items-center justify-center cursor-pointer select-none md:scale-[0.80] lg:scale-[0.85] xl:scale-100 origin-top-right translate-x-0 md:translate-x-4 lg:translate-x-8 xl:translate-x-12 translate-y-0 md:translate-y-6 lg:translate-y-10 xl:translate-y-14"
+          className="relative h-[380px] sm:h-[440px] md:h-[460px] lg:h-[500px] xl:h-[640px] flex items-center justify-center cursor-pointer select-none md:scale-[0.80] lg:scale-[0.85] xl:scale-100 origin-top-right translate-x-3 sm:translate-x-6 md:translate-x-10 lg:translate-x-16 xl:translate-x-22 translate-y-0 md:translate-y-6 lg:translate-y-10 xl:translate-y-14"
         >
           {/* Ambient glow backdrop behind the credit card stack (Figma Specs: Cyan-to-Blue, 702px x 428px, 220px Blur) */}
           <div className="absolute w-[280px] h-[180px] sm:w-[500px] sm:h-[300px] lg:w-[702px] lg:h-[428px] rounded-full bg-gradient-to-r from-[#1fedf8] to-[#1f8eff] opacity-20 blur-[80px] sm:blur-[160px] lg:blur-[220px] lg:rotate-[90.25deg] z-0 pointer-events-none" />
@@ -165,7 +165,7 @@ export default function Hero() {
 
             {/* Pill 2 (Middle-Right): Spending helps plant trees */}
             <div
-              className="absolute top-[28%] sm:top-[30%] left-[-10px] sm:left-[5px] md:left-[15px] lg:left-[35px] xl:left-[60px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute top-[28%] sm:top-[30%] left-[-25px] sm:left-[-10px] md:left-[0px] lg:left-[10px] xl:left-[20px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "6s", animationDelay: "1.5s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shrink-0">
@@ -180,9 +180,9 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Pill 3 (Bottom-Left): Join 500,000+ members */}
+            {/* Pill 3 (Bottom-Right): Join 500,000+ members */}
             <div
-              className="absolute bottom-[80px] sm:bottom-[110px] lg:bottom-[130px] left-[-55px] sm:left-[-110px] lg:left-[-150px] xl:left-[-170px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
+              className="absolute bottom-[80px] sm:bottom-[110px] lg:bottom-[130px] right-[-25px] sm:right-[-45px] lg:right-[-65px] xl:right-[-85px] z-40 flex items-center gap-[6px] sm:gap-[8px] lg:gap-[12px] h-[34px] sm:h-[42px] lg:h-[58.5px] px-[9px] sm:px-[12px] py-[3px] lg:px-[21px] lg:py-[9px] rounded-full bg-[#F9F4FF]/[0.38] border-[0.6px] lg:border-[0.88px] border-white/[0.39] backdrop-blur-[22.85px] shadow-[0_12px_32px_rgba(0,0,0,0.5)] whitespace-nowrap animate-float"
               style={{ animationDuration: "7s", animationDelay: "3s" }}
             >
               <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-full flex items-center justify-center shrink-0">
